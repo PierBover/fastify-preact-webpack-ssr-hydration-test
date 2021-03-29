@@ -1,0 +1,35 @@
+{
+  "name": "fastify-preact-webpack-ssr-hydration-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "start": "node build/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PierBover/fastify-preact-webpack-ssr-hydration-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PierBover/fastify-preact-webpack-ssr-hydration-test/issues"
+  },
+  "homepage": "https://github.com/PierBover/fastify-preact-webpack-ssr-hydration-test#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "fastify": "^3.14.1",
+    "fastify-static": "^4.0.1",
+    "preact": "^10.5.13",
+    "preact-render-to-string": "^5.1.17"
+  }
+}
