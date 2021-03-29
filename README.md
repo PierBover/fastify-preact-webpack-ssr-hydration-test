@@ -2,4 +2,6 @@
 
 To test this do `npm run build` and then `npm run start`.
 
-<img src="lighthouse.png" width="400">
+<p align="center">
+	<img src="lighthouse.png" width="500">
+</p>
