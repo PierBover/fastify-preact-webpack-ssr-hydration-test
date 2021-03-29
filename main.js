@@ -3,6 +3,7 @@ import path from 'path';
 import fastify from 'fastify';
 import fastifyStatic from 'fastify-static';
 import preactToString from 'preact-render-to-string';
+import {h} from 'preact';
 
 import App from './App.jsx';
 import page from './page.js';
@@ -15,8 +16,7 @@ server.register(fastifyStatic, {
 
 server.get('/', async (request, reply) => {
 	reply.header('content-type', 'text/html; charset=UTF-8');
-	const app = new App();
-	const html = page(preactToString(app.render()));
+	const html = page(preactToString(h(App)));
 	reply.send(html);
 });
 
